@@ -2,15 +2,11 @@
 
 ## 📁 Структура репозитория
 
-clickhouse-emoji-migration/
-├── README.md # Краткая инструкция по шагам
-├── scripts/
-│ └── collect_emojis.py # Скрипт для сбора эмодзи
-└── sql/
-├── 01_create_table.sql # Создание таблицы
-├── 02_migrate.sql # Миграция в новую БД
-└── 03_compare_hashes.sql # Сравнение по хешам
-
+README.md # Краткая инструкция по шагам
+collect_emojis.py # Скрипт для сбора эмодзи
+01_create_table.sql # Создание таблицы
+02_migrate.sql # Миграция в новую БД
+03_compare_hashes.sql # Сравнение по хешам
 
 ## 📋 Порядок действий
 
