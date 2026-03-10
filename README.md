@@ -3,12 +3,12 @@
 ## 📋 Порядок действий
 
 ### 1️⃣ Подготовка
-- [ ] Создать таблицу в старой БД (`sql/01_create_table.sql`)
-- [ ] Создать таблицу в новой БД (`sql/01_create_table.sql`)
+- [ ] Создать таблицу в старой БД (`01_create_table.sql`)
+- [ ] Создать таблицу в новой БД (`01_create_table.sql`)
 
 ### 2️⃣ Сбор тестовых данных
-python scripts/collect_emojis.py
-📁 Результат: data/emojis_with_codes.csv
+python collect_emojis.py
+📁 Результат: emojis_with_codes.csv
 
 ### 3️⃣ Импорт в старую БД
 
@@ -18,12 +18,12 @@ python scripts/collect_emojis.py
 - Заголовки: есть
 
 ### 4️⃣ Миграция в новую БД
-Выполнить в старой БД: sql/02_migrate.sql
+Выполнить в старой БД: 02_migrate.sql
 ⚠️ Заменить на свой хост, порт, логин, пароль, имя таблицы
 
 
 ### 5️⃣ Проверка целостности
-Сравнить хеши: sql/03_compare_hashes.sql
+Сравнить хеши: 03_compare_hashes.sql
 ⚠️ Заменить на свои параметры подключения к новой БД
 
 
